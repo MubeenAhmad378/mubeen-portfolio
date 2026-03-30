@@ -37,11 +37,11 @@ const Hero = () => {
           <div className={styles.textContent}>
             <p className={styles.greeting}>Hi there, I'm</p>
             <h1 ref={titleRef} className={styles.title}>
-              Arslan Yaseen
+              Mubeen Ahmad
             </h1>
             <h2 className={styles.subtitle}>
               <span className={styles.typingText}>
-                Associate Software Engineer <span className={styles.separator}>|</span> AI Enthusiast
+                Senior Software Engineer
               </span>
             </h2>
             <p className={styles.description}>
@@ -60,7 +60,7 @@ const Hero = () => {
 
             <div className={styles.social}>
               <Link
-                href="https://github.com/arslanyaseen94"
+                href="https://github.com/MubeenAhmad378?tab=overview&from=2026-03-01&to=2026-03-26"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -69,7 +69,7 @@ const Hero = () => {
                 <Github size={20} />
               </Link>
               <Link
-                href="https://www.linkedin.com/in/arslanyaseendev/"
+                href="https://www.linkedin.com/in/mubeen-ahmad123/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -94,7 +94,7 @@ const Hero = () => {
               <div className={styles.imageBorder}></div>
               <Image
                 src="/image/MyPic.png"
-                alt="Talib Husain"
+                alt="Mubeen Ahmad"
                 width={500}
                 height={500}
                 className={styles.image}

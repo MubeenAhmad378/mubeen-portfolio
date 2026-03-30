@@ -1,6 +1,6 @@
 import Link from "next/link"
 import styles from "./Footer.module.css"
-import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -12,15 +12,14 @@ const Footer = () => {
         <div className={styles.content}>
           <div className={styles.about}>
             <Link href="/" className={styles.logo}>
-              <span>Arslan</span>Yaseen
+              <span>Mubeen</span>Ahmad
             </Link>
             <p>
-              Software Developer & AI Enthusiast specializing in creating exceptional digital experiences that
-              combine beautiful design with powerful agentic functionality.
+              Senior Software Engineer focused on building reliable, scalable, and high-quality digital products.
             </p>
             <div className={styles.social}>
               <Link
-                href="https://github.com/arslanyaseen94"
+                href="https://github.com/MubeenAhmad378?tab=overview&from=2026-03-01&to=2026-03-26"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -28,30 +27,14 @@ const Footer = () => {
                 <Github size={20} />
               </Link>
               <Link
-                href="https://www.linkedin.com/in/arslanyaseendev"
+                href="https://www.linkedin.com/in/mubeen-ahmad123/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </Link>
-              {/* <Link
-                href="https://twitter.com/talibraath"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
-              </Link> */}
-              <Link
-                href="https://www.instagram.com/arslan.yaseen.94/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-              >
-                <Instagram size={20} />
-              </Link>
-              <Link href="mailto:arslanbhatti007yra@gmail.com" aria-label="Email">
+              <Link href="mailto:mubeen.166912@gmail.com" aria-label="Email">
                 <Mail size={20} />
               </Link>
             </div>
@@ -111,8 +94,8 @@ const Footer = () => {
           <div className={styles.contact}>
             <h3>Contact</h3>
             <p>Lahore, Pakistan</p>
-            <p>arslanbhatti007yra@gmail.com</p>
-            <p>+92 312 0695292</p>
+            <p>mubeen.166912@gmail.com</p>
+            <p>+923026738378</p>
             <Link href="#contact" className={styles.contactBtn}>
               Get In Touch
             </Link>
@@ -120,7 +103,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.bottom}>
-          <p>&copy; {currentYear} Arslan Yaseen. All rights reserved.</p>
+          <p>&copy; {currentYear} Mubeen Ahmad. All rights reserved.</p>
           <div className={styles.bottomLinks}>
             <Link href="/privacy-policy">Privacy Policy</Link>
             <Link href="/terms-of-service">Terms of Service</Link>

@@ -34,8 +34,9 @@ const Stats = () => {
     {
       icon: <Award size={32} />,
       value: 0,
-      label: "Years Experience",
-      increment: 0.1,
+      label: "Years of Experience",
+      suffix: "+",
+      increment: 1,
     },
     {
       icon: <Coffee size={32} />,
@@ -46,7 +47,7 @@ const Stats = () => {
     },
   ]
 
-  const finalValues = [14, 15, 2, 100]
+  const finalValues = [40, 39, 5, 100]
   const [currentValues, setCurrentValues] = useState(stats.map(() => 0))
 
   useEffect(() => {

@@ -9,13 +9,13 @@ const About = () => {
         <div className={styles.content}>
           <div className={styles.info}>
             <div className={styles.header}>
-              <h3 className={styles.greeting}>Hello, I'm Arslan Yaseen</h3>
+              <h3 className={styles.greeting}>Hello, I am Mubeen Ahmad.</h3>
               <div className={styles.decorativeLine}></div>
             </div>
             
             <div className={styles.bioContainer}>
               <p className={styles.bio}>
-                I am a passionate Software Engineer with a strong foundation in full-stack web development and AI technologies.
+                Hello, I am Mubeen Ahmad.
               </p>
               <p className={styles.bio}>
                With strong proficiency in JavaScript and PHP, and hands-on experience with frameworks such as React, Next.js, Laravel, and Node.js, I am well-equipped to handle full-stack web development tasks. I specialize in building scalable web applications, developing RESTful APIs, and integrating modern technologies to deliver efficient, secure, and business-focused solutions.
@@ -25,11 +25,11 @@ const About = () => {
             <div className={styles.details}>
               <div className={styles.detail}>
                 <span className={styles.label}>Name:</span>
-                <span className={styles.value}>Arslan Yaseen</span>
+                <span className={styles.value}>Mubeen Ahmad</span>
               </div>
               <div className={styles.detail}>
                 <span className={styles.label}>Email:</span>
-                <span className={styles.value}>arslanbhatti007yra@gmail.com</span>
+                <span className={styles.value}>mubeen.166912@gmail.com</span>
               </div>
               <div className={styles.detail}>
                 <span className={styles.label}>Location:</span>
@@ -37,7 +37,7 @@ const About = () => {
               </div>
               <div className={styles.detail}>
                 <span className={styles.label}>Education:</span>
-                <span className={styles.value}>B.S. Computer Science,Superior University Gold Campus (CGPA: 3.29)</span>
+                <span className={styles.value}>BS Software Engineering, GCUF</span>
               </div>
             </div>
 
@@ -48,9 +48,9 @@ const About = () => {
                 <div className={styles.timelineItem}>
                   <div className={styles.timelineMarker}></div>
                   <div className={styles.timelineContent}>
-                    <h5>Software Engineer - Transdata</h5>
-                    <p className={styles.timelinePeriod}>Nov 2025 - Ongoing</p>
-                    <p>Developed RESTful APIs using Laravel for business automation and web applications. Optimized database queries and indexing, improving overall performance by 25%. Collaborated within Agile sprints to deliver clean, maintainable, and production-ready code.</p>
+                    <h5>Senior Software Engineer - Elite Techlogix</h5>
+                    <p className={styles.timelinePeriod}>Present</p>
+                    <p>Leading development of scalable web applications and APIs, guiding architecture decisions, and collaborating across teams to deliver reliable, business-focused solutions.</p>
                   </div>
                 </div>
 

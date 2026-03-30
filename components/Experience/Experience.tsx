@@ -17,15 +17,13 @@ interface EducationItem {
 const Experience = () => {
   const experiences: ExperienceItem[] = [
     {
-      title: "Software Engineer",
-      company: "Transdata",
-      period: "Nov 2025 - Ongoing",
+      title: "Senior Software Engineer",
+      company: "Elite Techlogix",
+      period: "Present",
       description: [
-        "Developing and maintaining web applications using React, Node.js, and MongoDB, resulting in a 20% increase in user engagement.",
-        "Collaborating with cross-functional teams to design and implement new features, improving overall application performance by 15%.",
-        "Participating in code reviews and providing constructive feedback to team members, enhancing code quality and maintainability.",
-        "Utilizing Agile methodologies to manage project timelines and deliverables, ensuring timely completion of tasks.",
-        "Implementing automated testing frameworks using Jest and Cypress, reducing bug rates by 25%.",
+        "Leading end-to-end development of scalable web applications and APIs with a focus on performance, reliability, and maintainability.",
+        "Driving architectural decisions, code quality standards, and mentoring engineers through reviews and collaborative development.",
+        "Partnering with cross-functional teams to deliver high-impact product features aligned with business goals.",
       ],
     },
     {
@@ -45,11 +43,11 @@ const Experience = () => {
 
   const education: EducationItem[] = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "Superior University Gold Campus, Lahore",
-      period: "August 2022 - June 2026",
+      degree: "BS Software Engineering",
+      institution: "GCUF",
+      period: "",
       description:
-        "Pursuing a Bachelor's degree in Computer Science with a focus on software development, algorithms, and data structures. Relevant coursework includes Web Development, Database Management, and Software Engineering.",
+        "Bachelor's degree focused on software engineering fundamentals, modern web development practices, and scalable system design.",
       },
   ]
 

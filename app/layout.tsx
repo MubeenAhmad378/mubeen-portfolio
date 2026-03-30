@@ -28,30 +28,30 @@ const orbitron = Orbitron({
 })
 
 export const metadata: Metadata = {
-  title: "Arslan Yaseen | MERN Stack & Laravel Developer",
-  description: "MERN Stack and Laravel developer specializing in modern web applications, REST APIs, and scalable full-stack solutions. Expertise in React, Next.js, Node.js, Express, MongoDB, and Laravel.",
-  keywords: ["MERN Stack", "Laravel Developer", "Full Stack Developer", "React", "Next.js", "Node.js", "Express", "MongoDB", "PHP", "Laravel", "Web Development", "REST APIs", "Frontend Developer", "Backend Developer"],
-  authors: [{ name: "Arslan Yaseen" }],
-  creator: "Arslan Yaseen",
-  publisher: "Arslan Yaseen",
+  title: "Mubeen Ahmad | Senior Software Engineer",
+  description: "Senior Software Engineer specializing in modern web applications, REST APIs, and scalable full-stack solutions.",
+  keywords: ["Senior Software Engineer", "Full Stack Developer", "React", "Next.js", "Node.js", "Web Development", "REST APIs", "Frontend Developer", "Backend Developer"],
+  authors: [{ name: "Mubeen Ahmad" }],
+  creator: "Mubeen Ahmad",
+  publisher: "Mubeen Ahmad",
   generator: "Next.js",
-  applicationName: "Arslan Yaseen Portfolio",
+  applicationName: "Mubeen Ahmad Portfolio",
   referrer: "origin-when-cross-origin",
   metadataBase: new URL("https://arslanyaseen.me"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Arslan Yaseen | MERN Stack & Laravel Developer",
-    description: "Building scalable and modern web applications using MERN Stack and Laravel.",
+    title: "Mubeen Ahmad | Senior Software Engineer",
+    description: "Building scalable and modern web applications as a Senior Software Engineer.",
     url: "https://arslanyaseen.me",
-    siteName: "Arslan Yaseen Portfolio",
+    siteName: "Mubeen Ahmad Portfolio",
     images: [
       {
         url: "/image/MyPic.png",
         width: 1200,
         height: 630,
-        alt: "Arslan Yaseen - MERN Stack & Laravel Developer",
+        alt: "Mubeen Ahmad - Senior Software Engineer",
       },
     ],
     locale: "en_US",
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arslan Yaseen | MERN Stack & Laravel Developer",
-    description: "MERN Stack and Laravel developer building modern full-stack web applications.",
-    creator: "@arslanyaseen",
+    title: "Mubeen Ahmad | Senior Software Engineer",
+    description: "Senior Software Engineer building modern full-stack web applications.",
+    creator: "@MubeenAhmad378",
     images: ["/image/MyPic.png"],
   },
   robots: {
