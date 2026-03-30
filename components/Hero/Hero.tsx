@@ -35,7 +35,7 @@ const Hero = () => {
       <div className={styles.container}>
         <div className={`${styles.content} ${isLoaded ? styles.loaded : ""}`}>
           <div className={styles.textContent}>
-            <p className={styles.greeting}>Hi there, I'm</p>
+            <p className={styles.greeting}>Hi there, I&apos;m</p>
             <h1 ref={titleRef} className={styles.title}>
               Mubeen Ahmad
             </h1>

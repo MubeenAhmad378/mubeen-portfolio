@@ -74,9 +74,9 @@ const Contact = () => {
 
         <div className={styles.content}>
           <div className={styles.info}>
-            <h3 className={styles.infoTitle}>Let's talk about everything!</h3>
+            <h3 className={styles.infoTitle}>Let&apos;s talk about everything!</h3>
             <p className={styles.infoText}>
-              Feel free to reach out if you have any projects, assignments, or ideas you'd like to collaborate on. I'm
+              Feel free to reach out if you have any projects, assignments, or ideas you&apos;d like to collaborate on. I&apos;m
               always open to new opportunities and bringing fresh ideas to life.
             </p>
 

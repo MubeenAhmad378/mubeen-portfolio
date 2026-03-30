@@ -113,7 +113,7 @@ const Testimonials = () => {
       <div className="container">
         <h2 className="section-title">Client Testimonials</h2>
         <p className="section-subtitle">
-          Don't just take my word for it. Here's what my clients have to say about working with me.
+          Don&apos;t just take my word for it. Here&apos;s what my clients have to say about working with me.
         </p>
 
         <div className={`${styles.testimonialSlider} ${isVisible ? styles.visible : ""}`}>

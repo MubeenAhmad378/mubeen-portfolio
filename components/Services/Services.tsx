@@ -121,7 +121,7 @@ const Services = () => {
       <div className="container">
         <h2 className="section-title">My Services</h2>
         <p className="section-subtitle">
-          I offer a wide range of services to help businesses and individuals bring their ideas to life. Here's what I
+          I offer a wide range of services to help businesses and individuals bring their ideas to life. Here&apos;s what I
           can do for you.
         </p>
 

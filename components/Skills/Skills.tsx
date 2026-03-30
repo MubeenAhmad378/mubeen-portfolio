@@ -94,7 +94,7 @@ const Skills = () => {
       <div className="container">
         <h2 className="section-title">My Skills</h2>
         <p className="section-subtitle">
-          I've acquired a diverse set of skills throughout my journey as a developer. Here's a comprehensive overview of
+          I&apos;ve acquired a diverse set of skills throughout my journey as a developer. Here&apos;s a comprehensive overview of
           my technical expertise.
         </p>
 

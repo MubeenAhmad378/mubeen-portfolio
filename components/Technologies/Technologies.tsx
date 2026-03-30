@@ -92,7 +92,7 @@ const Technologies = () => {
       <div className="container">
         <h2 className="section-title">Technologies I Work With</h2>
         <p className="section-subtitle">
-          I'm proficient in a wide range of technologies across the full stack development spectrum. Here are the tools
+          I&apos;m proficient in a wide range of technologies across the full stack development spectrum. Here are the tools
           and frameworks I use to build powerful applications.
         </p>
 
