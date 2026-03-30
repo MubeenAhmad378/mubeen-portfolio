@@ -51,7 +51,7 @@ const Markdown: React.FC<MarkdownProps> = ({ content }) => {
           tr: ({ node, ...props }) => <tr className={styles.tableRow} {...props} />,
           th: ({ node, ...props }) => <th className={styles.tableHeader} {...props} />,
           td: ({ node, ...props }) => <td className={styles.tableCell} {...props} />,
-          img: ({ node, ...props }) => <img className={styles.image} {...props} />,
+          img: ({ node, alt, ...props }) => <img className={styles.image} alt={alt ?? ""} {...props} />,
           hr: ({ node, ...props }) => <hr className={styles.hr} {...props} />,
         }}
       >

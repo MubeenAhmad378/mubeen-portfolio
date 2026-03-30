@@ -13,12 +13,13 @@ interface Particle {
   opacity: number
 }
 
+const PARTICLE_COUNT = 60 // Reduced particle count for better performance
+const CONNECTION_DISTANCE = 150
+const PARTICLE_COLORS = ["#4ADEDE", "#C084FC", "#8B5CF6", "#3ABFF8"]
+
 const ParticleBackground = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const particles: Particle[] = []
-  const particleCount = 60 // Reduced particle count for better performance
-  const connectionDistance = 150
-  const colors = ["#4ADEDE", "#C084FC", "#8B5CF6", "#3ABFF8"]
+  const particlesRef = useRef<Particle[]>([])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -26,6 +27,7 @@ const ParticleBackground = () => {
 
     const ctx = canvas.getContext("2d")
     if (!ctx) return
+    const particles = particlesRef.current
 
     let animationFrameId: number
     let mouseX = 0
@@ -46,14 +48,14 @@ const ParticleBackground = () => {
 
     const initParticles = () => {
       particles.length = 0
-      for (let i = 0; i < particleCount; i++) {
+      for (let i = 0; i < PARTICLE_COUNT; i++) {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
           size: Math.random() * 2 + 0.5,
           speedX: (Math.random() - 0.5) * 0.3, // Reduced speed
           speedY: (Math.random() - 0.5) * 0.3, // Reduced speed
-          color: colors[Math.floor(Math.random() * colors.length)],
+          color: PARTICLE_COLORS[Math.floor(Math.random() * PARTICLE_COLORS.length)],
           opacity: Math.random() * 0.5 + 0.2,
         })
       }
@@ -96,8 +98,8 @@ const ParticleBackground = () => {
             const dy = particles[j].y - particle.y
             const distance = Math.sqrt(dx * dx + dy * dy)
 
-            if (distance < connectionDistance) {
-              const opacity = 1 - distance / connectionDistance
+            if (distance < CONNECTION_DISTANCE) {
+              const opacity = 1 - distance / CONNECTION_DISTANCE
               ctx.beginPath()
               ctx.strokeStyle = `rgba(255, 255, 255, ${opacity * 0.15})`
               ctx.lineWidth = 0.5
@@ -114,8 +116,8 @@ const ParticleBackground = () => {
           const dy = mouseY - particle.y
           const distance = Math.sqrt(dx * dx + dy * dy)
 
-          if (distance < connectionDistance * 1.2) {
-            const opacity = 1 - distance / (connectionDistance * 1.2)
+          if (distance < CONNECTION_DISTANCE * 1.2) {
+            const opacity = 1 - distance / (CONNECTION_DISTANCE * 1.2)
             ctx.beginPath()
             ctx.strokeStyle = particle.color.replace(")", `, ${opacity * 0.3})`)
             ctx.lineWidth = 0.5

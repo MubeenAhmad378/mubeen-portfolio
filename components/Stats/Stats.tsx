@@ -14,41 +14,42 @@ interface StatItem {
   increment: number
 }
 
+const STATS: StatItem[] = [
+  {
+    icon: <Code size={32} />,
+    value: 0,
+    label: "Projects Completed",
+    increment: 1,
+  },
+  {
+    icon: <Users size={32} />,
+    value: 0,
+    label: "Happy Clients",
+    increment: 1,
+  },
+  {
+    icon: <Award size={32} />,
+    value: 0,
+    label: "Years of Experience",
+    suffix: "+",
+    increment: 1,
+  },
+  {
+    icon: <Coffee size={32} />,
+    value: 0,
+    label: "Cups of Coffee",
+    suffix: "+",
+    increment: 10,
+  },
+]
+
+const FINAL_VALUES = [40, 39, 5, 100]
+
 const Stats = () => {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLDivElement>(null)
 
-  const stats: StatItem[] = [
-    {
-      icon: <Code size={32} />,
-      value: 0,
-      label: "Projects Completed",
-      increment: 1,
-    },
-    {
-      icon: <Users size={32} />,
-      value: 0,
-      label: "Happy Clients",
-      increment: 1,
-    },
-    {
-      icon: <Award size={32} />,
-      value: 0,
-      label: "Years of Experience",
-      suffix: "+",
-      increment: 1,
-    },
-    {
-      icon: <Coffee size={32} />,
-      value: 0,
-      label: "Cups of Coffee",
-      suffix: "+",
-      increment: 10,
-    },
-  ]
-
-  const finalValues = [40, 39, 5, 100]
-  const [currentValues, setCurrentValues] = useState(stats.map(() => 0))
+  const [currentValues, setCurrentValues] = useState(STATS.map(() => 0))
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -73,12 +74,12 @@ const Stats = () => {
   useEffect(() => {
     if (!isVisible) return
 
-    const intervals = stats.map((stat, index) => {
+    const intervals = STATS.map((stat, index) => {
       return setInterval(() => {
         setCurrentValues((prev) => {
           const newValues = [...prev]
-          if (newValues[index] < finalValues[index]) {
-            newValues[index] = Math.min(newValues[index] + stat.increment, finalValues[index])
+          if (newValues[index] < FINAL_VALUES[index]) {
+            newValues[index] = Math.min(newValues[index] + stat.increment, FINAL_VALUES[index])
           }
           return newValues
         })
@@ -94,7 +95,7 @@ const Stats = () => {
     <section id="stats" className={styles.stats} ref={sectionRef}>
       <div className={styles.container}>
         <div className={styles.statsGrid}>
-          {stats.map((stat, index) => (
+          {STATS.map((stat, index) => (
             <div key={index} className={`${styles.statCard} ${isVisible ? styles.visible : ""}`}>
               <div className={styles.iconWrapper}>{stat.icon}</div>
               <h3 className={styles.statValue}>

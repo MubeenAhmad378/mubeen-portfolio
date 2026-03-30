@@ -102,11 +102,11 @@ const Testimonials = () => {
   // Auto-rotate testimonials
   useEffect(() => {
     const interval = setInterval(() => {
-      nextTestimonial()
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
     }, 8000)
     
     return () => clearInterval(interval)
-  }, [])
+  }, [testimonials.length])
 
   return (
     <section id="testimonials" className={`section ${styles.testimonials}`} ref={sectionRef}>
